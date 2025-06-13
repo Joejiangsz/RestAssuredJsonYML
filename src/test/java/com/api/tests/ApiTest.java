@@ -1,6 +1,9 @@
 package com.api.tests;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.qameta.allure.Allure;

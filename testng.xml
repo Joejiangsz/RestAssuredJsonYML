@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="API Test Suite">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test name="User API Tests">
+        <classes>
+            <class name="com.api.tests.ApiTest"/>
+        </classes>
+    </test>
+</suite>

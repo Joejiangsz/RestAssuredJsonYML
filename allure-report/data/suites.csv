@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1852","testGetResponseJson","Surefire suite","Fri Jun 13 13:28:22 CST 2025","passed","Fri Jun 13 13:28:24 CST 2025","com.api.tests.ApiTest","Surefire test","com.api.tests.ApiTest","testGetResponseJson"
+"","675","testGetWithinResponse","Surefire suite","Fri Jun 13 13:28:25 CST 2025","passed","Fri Jun 13 13:28:26 CST 2025","com.api.tests.ApiTest","Surefire test","com.api.tests.ApiTest","testGetWithinResponse"
+"","908","testPOSTUser","Surefire suite","Fri Jun 13 13:28:26 CST 2025","passed","Fri Jun 13 13:28:27 CST 2025","com.api.tests.ApiTest","Surefire test","com.api.tests.ApiTest","testPOSTUser"
+"","1041","testGetResponseSingleTag","Surefire suite","Fri Jun 13 13:28:24 CST 2025","passed","Fri Jun 13 13:28:25 CST 2025","com.api.tests.ApiTest","Surefire test","com.api.tests.ApiTest","testGetResponseSingleTag"
+"","1688","testGetUser","Default Suite","Fri Jun 13 11:03:29 CST 2025","passed","Fri Jun 13 11:03:31 CST 2025","com.api.tests.ApiTest","RestAssuredJsonYML","com.api.tests.ApiTest","testGetUser"
