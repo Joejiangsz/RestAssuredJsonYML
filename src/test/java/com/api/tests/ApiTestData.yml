@@ -1,0 +1,14 @@
+getUser:
+  id: 1
+  expectedStatus: 200
+  expectedName: "John Doe"
+
+createUser:
+  request:
+    name: "Jane Doe"
+    email: "jane@example.com"
+  expectedStatus: 201
+  expectedResponseContains:
+    - "id"
+    - "Jane Doe"
+    - "jane@example.com"

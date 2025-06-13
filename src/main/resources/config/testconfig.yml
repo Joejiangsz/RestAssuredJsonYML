@@ -1,0 +1,10 @@
+# testconfig.yml
+baseUrl: "https://jsonplaceholder.typicode.com"
+timeout: 30
+endpoints:
+  getUser:
+    path: "/users/{id}"
+    method: GET
+  createUser:
+    path: "/users"
+    method: POST
