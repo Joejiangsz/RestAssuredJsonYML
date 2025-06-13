@@ -95,4 +95,40 @@ public class ApiTest {
         // Capture test information in Allure
         Allure.addAttachment("Response", response.asString());
     }
+
+    @Test
+    public void testPOSTUser() throws IOException {
+        // Load request from JSON file
+        File requestFile = new File("src/main/resources/testdata/request.json");
+        ObjectMapper objectMapper = new ObjectMapper();
+        Map<String, Object> requestBody = objectMapper.readValue(requestFile, Map.class);
+
+        Response response = RestAssured.given()
+                .headers("Content-Type", "application/json")
+                .body(requestBody)
+                .when()
+                .post("/users");
+
+        System.out.println("=========this is response========");
+        response.then().log().all();
+        System.out.println("=========this is response========");
+
+        // Validate status code and response body
+        Assert.assertEquals(response.statusCode(), 201);
+
+        //verify the response as Json file
+        ObjectMapper mapper = new ObjectMapper();
+        //get the actual response and save as Json node
+        JsonNode actualResponseJson = mapper.readTree(response.asString());
+
+        //get the expect response and save as Json node
+        File responseFile = new File("src/main/resources/testdata/reponsePost.json");
+        JsonNode expectResponseJson = mapper.readTree(responseFile);
+
+        Assert.assertEquals(actualResponseJson,expectResponseJson);
+
+
+        // Capture test information in Allure
+        Allure.addAttachment("Response", response.asString());
+    }
 }
